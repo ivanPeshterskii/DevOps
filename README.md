@@ -87,3 +87,5 @@ Planned additions include:
 Created and maintained by a motivated junior developer with strong interest in **backend development, DevOps culture, and clean engineering practices**.
 
 This repository will continue to evolve as my skills grow.
+
+![Docker CI](https://github.com/ivanPeshterskii/DevOps/actions/workflows/docker-ci.yml/badge.svg)

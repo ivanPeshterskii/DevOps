@@ -1,0 +1,26 @@
+name: Docker CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate compose file
+        run: |
+          cd docker
+          docker compose config
+
+      - name: Build Docker image
+        run: |
+          cd docker
+          docker build -t devops-docker-demo .
+
