@@ -1,5 +1,8 @@
 # Troubleshooting
 
+## Quick tip
+When stuck, run `git status` first.
+
 ## Git pull: divergent branches
 **Issue:** `fatal: Need to specify how to reconcile divergent branches.`  
 **Cause:** Local and remote branches had different commits.  
